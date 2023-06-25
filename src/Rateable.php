@@ -105,6 +105,22 @@ trait Rateable
         ])->first()->comment;
     }
 
+    public function refRatingCheck($ref)
+    {
+        return $this->ratings()->where([
+            ['user_id', '=', Auth::id()],
+            ['ref', '=', $ref]
+        ])->exists();
+    }
+
+    public function refRatingDelete($ref)
+    {
+        return $this->ratings()->where([
+            ['user_id', '=', Auth::id()],
+            ['ref', '=', $ref]
+        ])->delete();
+    }
+
     public function ratingPercent($max = 5)
     {
         $quantity = $this->ratings()->count();
