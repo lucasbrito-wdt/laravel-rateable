@@ -1,9 +1,9 @@
 <?php
 
-namespace willvincent\Rateable\Tests\models;
+namespace LucasBrito\Rateable\Tests\models;
 
 use Illuminate\Database\Eloquent\Model;
-use willvincent\Rateable\Rateable;
+use LucasBrito\Rateable\Rateable;
 
 class Post extends Model
 {

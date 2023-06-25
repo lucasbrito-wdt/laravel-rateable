@@ -1,6 +1,6 @@
 <?php
 
-namespace willvincent\Rateable;
+namespace LucasBrito\Rateable;
 
 use Illuminate\Support\Facades\Auth;
 

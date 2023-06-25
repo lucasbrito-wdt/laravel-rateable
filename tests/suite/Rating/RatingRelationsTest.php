@@ -1,8 +1,8 @@
 <?php
 
 
-use willvincent\Rateable\Tests\models\Rating;
-use willvincent\Rateable\Tests\TestCase;
+use LucasBrito\Rateable\Tests\models\Rating;
+use LucasBrito\Rateable\Tests\TestCase;
 
 class RatingRelationsTest extends TestCase
 {

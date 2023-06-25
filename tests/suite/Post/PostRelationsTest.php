@@ -1,11 +1,11 @@
 <?php
 
-namespace willvincent\Rateable\Tests\suite\Post;
+namespace LucasBrito\Rateable\Tests\suite\Post;
 
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use willvincent\Rateable\Tests\models\Post;
-use willvincent\Rateable\Tests\TestCase;
+use LucasBrito\Rateable\Tests\models\Post;
+use LucasBrito\Rateable\Tests\TestCase;
 
 /**
  * @internal

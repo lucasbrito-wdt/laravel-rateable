@@ -1,10 +1,10 @@
 <?php
 
-namespace willvincent\Rateable\Tests\Database\seeders;
+namespace LucasBrito\Rateable\Tests\Database\seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use willvincent\Rateable\Tests\models\Post;
+use LucasBrito\Rateable\Tests\models\Post;
 
 class PostSeeder extends Seeder
 {

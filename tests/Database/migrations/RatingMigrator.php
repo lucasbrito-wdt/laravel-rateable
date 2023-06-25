@@ -1,6 +1,6 @@
 <?php
 
-namespace willvincent\Rateable\Tests\Database\migrations;
+namespace LucasBrito\Rateable\Tests\Database\migrations;
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -16,6 +16,7 @@ class RatingMigrator extends Migration
         Schema::create('ratings', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->bigInteger('ref')->unsigned();
             $table->integer('rating');
             $table->text('comment')->nullable();
             $table->morphs('rateable');

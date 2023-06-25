@@ -1,6 +1,6 @@
 <?php
 
-namespace willvincent\Rateable\Tests\Database\seeders;
+namespace LucasBrito\Rateable\Tests\Database\seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Auth;
@@ -23,11 +23,11 @@ class RatingsSeeder extends Seeder
 
 
         Auth::loginUsingId(1);
-        $post1->rate(5);
-        $post2->rate(1);
+        $post1->rate(1, 5);
+        $post2->rate(2, 1);
 
         Auth::loginUsingId(2);
-        $post1->rate(5);
-        $post2->rate(5);
+        $post1->rate(1, 5);
+        $post2->rate(2, 5);
     }
 }

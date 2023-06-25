@@ -1,6 +1,6 @@
 <?php
 
-namespace willvincent\Rateable;
+namespace LucasBrito\Rateable;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
