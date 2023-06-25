@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "willvincent\\Rateable\\": "src"
+            "LucasBrito\\Rateable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "willvincent\\Rateable\\Tests\\": "tests"
+            "LucasBrito\\Rateable\\Tests\\": "tests"
         }
     },
     "scripts": {
