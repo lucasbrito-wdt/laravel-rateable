@@ -144,11 +144,6 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-## Credits
-
-- [Will Vincent](https://github.com/lucasbrito-wdt)
-- [All Contributors](https://github.com/lucasbrito-wdt/laravel-rateable/graphs/contributors)
-
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
