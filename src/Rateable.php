@@ -97,7 +97,7 @@ trait Rateable
         ])->sum('rating');
     }
 
-    public function refCommentRating(ref)
+    public function refCommentRating($ref)
     {
         return $this->ratings()->where([
             ['user_id', '=', Auth::id()],
