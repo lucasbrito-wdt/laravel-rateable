@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 
 trait Rateable
 {
-    /**
+       /**
      * This model has many ratings.
      *
      * @param mixed $ref
@@ -76,9 +76,33 @@ trait Rateable
         return $this->ratings()->where('user_id', Auth::id())->avg('rating');
     }
 
+    public function refAverageRating($ref)
+    {
+        return $this->ratings()->where([
+            ['user_id', '=', Auth::id()],
+            ['ref', '=', $ref]
+        ])->avg('rating');
+    }
+
     public function userSumRating()
     {
         return $this->ratings()->where('user_id', Auth::id())->sum('rating');
+    }
+
+    public function refSumRating()
+    {
+        return $this->ratings()->where([
+            ['user_id', '=', Auth::id()],
+            ['ref', '=', $ref]
+        ])->sum('rating');
+    }
+
+    public function refCommentRating(ref)
+    {
+        return $this->ratings()->where([
+            ['user_id', '=', Auth::id()],
+            ['ref', '=', $ref]
+        ])->first()->comment;
     }
 
     public function ratingPercent($max = 5)
@@ -109,5 +133,15 @@ trait Rateable
     public function getUserSumRatingAttribute()
     {
         return $this->userSumRating();
+    }
+
+    public function getRefAverageRatingAttribute($ref)
+    {
+        return $this->refAverageRating($ref);
+    }
+
+    public function getRefSumRatingAttribute($ref)
+    {
+        return $this->refSumRating($ref);
     }
 }
