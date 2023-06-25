@@ -48,7 +48,7 @@ trait Rateable
 
     public function ratings()
     {
-        return $this->morphMany('lucasbrito-wdt\Rateable\Rating', 'rateable');
+        return $this->morphMany('LucasBrito\Rateable\Rating', 'rateable');
     }
 
     public function averageRating()

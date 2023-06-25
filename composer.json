@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "lucasbrito-wdt\\Rateable\\RateableServiceProvider"
+                "LucasBrito\\Rateable\\RateableServiceProvider"
             ]
         }
     },
