@@ -71,7 +71,8 @@ First, to add a rating to your model:
 $post = Post::first();
 
 // Add a rating of 5, from the currently authenticated user
-$post->rate(5);
+$post->rate(10, 5); -- Ref, Rate
+$post->rate(10, 5, 'Comentário'); -- Ref, Rate, Comment
 dd(Post::first()->ratings);
 ````
 
@@ -151,8 +152,3 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-# laravel-rateable
-# laravel-rateable
-# laravel-rateable
-# laravel-rateable
-# laravel-rateable
